@@ -1,0 +1,52 @@
+Estrutura de Base de Dados:
+
+Tabela de Projetos
+
+ID_Projeto: Identificador único do projeto.
+Nome_Projeto: Nome do projeto.
+Descrição: Breve descrição do projeto.
+Data_Início: Data de início do projeto.
+Data_Término_Proposto: Data de término proposta.
+Status_Atual: Status do projeto (Ex.: Em andamento, Concluído, Em atraso).
+%_Conclusão: Porcentagem de conclusão do projeto.
+Prioridade: Nível de prioridade (Alta, Média, Baixa).
+Categoria: Categoria do projeto (Ex.: RPA, Power BI, Melhoria de Processos, etc.).
+
+Tabela de Tarefas
+
+ID_Tarefa: Identificador único da tarefa.
+ID_Projeto: Chave estrangeira que se conecta à tabela de projetos.
+Nome_Tarefa: Nome da tarefa.
+Descrição_Tarefa: Descrição da tarefa.
+Data_Início_Tarefa: Data de início da tarefa.
+Data_Término_Tarefa: Data prevista para término da tarefa.
+Status_Tarefa: Status da tarefa (Em andamento, Concluída, Pendente).
+Responsável: Pessoa ou equipe responsável.
+Prioridade_Tarefa: Prioridade da tarefa (Alta, Média, Baixa).
+%_Conclusão_Tarefa: Porcentagem de conclusão da tarefa.
+
+Tabela de Melhoria
+
+ID_Melhoria: Identificador único da melhoria.
+ID_Projeto: Chave estrangeira que se conecta à tabela de projetos.
+Descrição_Melhoria: Descrição da melhoria realizada ou planejada.
+Status_Melhoria: Status da melhoria (Planejada, Implementada, Em andamento).
+Impacto_Melhoria: Avaliação do impacto (Alto, Médio, Baixo).
+Data_Início_Melhoria: Data de início da melhoria.
+Data_Término_Melhoria: Data de término da melhoria.
+
+Tabela de Prazo
+
+ID_Prazo: Identificador único.
+ID_Projeto: Chave estrangeira que se conecta à tabela de projetos.
+Data_Prazo: Data limite do prazo.
+Descrição_Prazo: Descrição do prazo.
+Status_Prazo: Status do prazo (No prazo, Atrasado, Pendente).
+
+Tabela de Envolvidos
+
+ID_Envolvido: Identificador único.
+ID_Projeto: Chave estrangeira que se conecta à tabela de projetos.
+Nome_Envolvido: Nome do envolvido (pode ser um colaborador, equipe ou fornecedor).
+Papel_Envolvido: Função do envolvido no projeto.
+Contato_Envolvido: Contato do envolvido.
